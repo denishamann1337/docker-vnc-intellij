@@ -5,7 +5,7 @@ MAINTAINER rarspace01 <rarspace01 AT gmaiI.com>
 # System tools
 #
 RUN apt-get update && \
-    apt-get install -y wget software-properties-common openjdk-7-jdk && \
+    apt-get install -y wget software-properties-common openjdk-11-jdk && \
     rm -rf /var/lib/apt/lists/*
 
 #
