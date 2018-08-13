@@ -1,5 +1,5 @@
-FROM kaixhin/vnc:latest
-MAINTAINER Murphy McMahon <pandeiro.docker@gmail.com>
+FROM rarspace01/vnc:latest
+MAINTAINER rarspace01 <rarspace01 AT gmaiI.com>
 
 #
 # System tools
@@ -13,8 +13,8 @@ RUN apt-get update && \
 #
 # From tarball
 WORKDIR /tmp
-RUN wget -q 'https://download.jetbrains.com/idea/ideaIC-2017.1.4.tar.gz' && \
-    tar xzf ideaIC-2017.1.4.tar.gz && rm ideaIC-2017.1.4.tar.gz && \
+RUN wget -q 'https://download.jetbrains.com/idea/ideaIU-2018.2.tar.gz' && \
+    tar xzf ideaIU-2018.2.tar.gz && rm ideaIU-2018.2.tar.gz && \
     mv idea-* /opt/idea && \
     ln -s /opt/idea/bin/idea.sh /usr/local/bin/idea.sh
 
